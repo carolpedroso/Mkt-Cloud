@@ -1,0 +1,9 @@
+select
+a.nome,
+b.produto
+from Clientes_Case_AnaCaroline a
+join Compras_Case_AnaCaroline c
+on a.id = c.id
+join Produtos_Case_AnaCaroline b
+on b.id = c.idproduto
+where b.produto = 'Blusa azul com folhas rosas e estrelas amarela'
