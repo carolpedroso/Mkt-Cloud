@@ -1,0 +1,10 @@
+select
+a.nome,
+a.email,
+b.idproduto
+from Clientes_Case_AnaCaroline a
+join Compras_Case_AnaCaroline c
+on a.id = c.id
+join Produtos_Case_AnaCaroline b
+on b.id = c.idproduto
+where b.categoria = 'Artigos colecionáveis'
